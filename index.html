@@ -134,19 +134,35 @@ body {
     </div>
     <div class="styles w-embed">
       <style>
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
 .navigation {
   position: fixed;
-  left: calc(50% - 1.75em);
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2000;
+  bottom: 2em;
+  transition: all 0.3s ease;
 }
+
 .cookies {
 transform: translate(-50%, -50%)
 }
+
 /* Media query for screens below 321px */
 @media (max-width: 769px) {
     .navigation {
   		position: fixed;
-  		left: calc(50% - 2.5em);
-}
+  		left: 50%;
+      transform: translateX(-50%);
+      bottom: 1em;
+    }
 }
 </style>
     </div>
