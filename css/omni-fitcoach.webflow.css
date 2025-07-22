@@ -50,6 +50,22 @@
   }
 }
 
+/* Logo text styling */
+.logo-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-heading {
+  font-family: Bwgradual, sans-serif;
+  font-weight: 700;
+  font-size: 1.5em;
+  color: var(--green);
+  margin: 0;
+  letter-spacing: 0.1em;
+}
+
 body {
   border-color: var(--transparant);
   font-size: 14px;
@@ -516,7 +532,7 @@ blockquote {
   z-index: 500;
   justify-content: space-between;
   width: 100%;
-  padding: 1.5em 3rem 1em;
+  padding: 1.5em 3em 1em;
   display: flex;
   position: fixed;
 }
@@ -644,9 +660,23 @@ blockquote {
   width: 100%;
   height: auto;
   padding-bottom: 3em;
-  padding-left: 6.5rem;
-  padding-right: 6.5rem;
+  padding-left: 3em;
+  padding-right: 3em;
   position: relative;
+}
+
+.branding-ellement-cont .added-info {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.branding-ellement-cont .add-left {
+  text-align: left;
+}
+
+.branding-ellement-cont .add-right {
+  text-align: right;
 }
 
 .brandingellement {
@@ -3226,6 +3256,15 @@ blockquote {
   display: flex;
 }
 
+.add-right {
+  grid-column-gap: .5em;
+  grid-row-gap: .5em;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+}
+
 .par-caps-16px-bold-g {
   color: var(--green);
   text-transform: uppercase;
@@ -5066,6 +5105,24 @@ blockquote {
 }
 
 @media screen and (max-width: 767px) {
+  
+  /* Force mobile hero text positioning */
+  .hero .added-info {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    width: 100% !important;
+  }
+  
+  .hero .add-left {
+    text-align: left !important;
+    align-items: flex-start !important;
+  }
+  
+  .hero .add-right {
+    text-align: right !important;
+    align-items: flex-end !important;
+  }
   .styleguide-container {
     padding-left: 2em;
     padding-right: 2em;
@@ -5164,6 +5221,7 @@ blockquote {
     align-self: center;
     position: relative;
   }
+
 
   .be-parloop {
     height: 6em;
@@ -5896,6 +5954,24 @@ blockquote {
 }
 
 @media screen and (max-width: 479px) {
+  
+  /* Force mobile hero text positioning */
+  .hero .added-info {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    width: 100% !important;
+  }
+  
+  .hero .add-left {
+    text-align: left !important;
+    align-items: flex-start !important;
+  }
+  
+  .hero .add-right {
+    text-align: right !important;
+    align-items: flex-end !important;
+  }
   h1 {
     font-size: 2.8rem;
   }
@@ -7029,6 +7105,7 @@ blockquote {
   .par-caps-18px-bold-g-branding.it {
     font-size: 1.3em;
   }
+
 
   .clip-text-par.speaker-headding {
     margin-top: 0;
